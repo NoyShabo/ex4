@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Noy Shabo</title>
+    <meta charset="UTF-8">
+    <!-- check this viewport -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script> -->
+</head>
+
+<body div class="backgroundImg">
+
+    <div class="spaceShip animationBlock"></div>
+    <div class="spaceShip2 animationBlock"></div>
+
+    <form action="http://se.shenkar.ac.il/teach/web1/2021/get_form3.php" method="get" autocomplete="on">
+
+        <h1>Hello, Humans !</h1>
+        <div class="boxLeftMusic">
+            <div class="alienMusic"></div>
+            <audio autoplay controls src="scary.mp3"></audio></div>
+
+        <div class="boxLeft0 card">
+            <div class="card-body">
+                <fieldset class="form-group">
+                    <div class="row">
+                        <legend class="col-form-label pt-1">
+                            <h5>Hello, human !</h5>
+                            <span class="card-text">Do you want to be kidnapped by alien ? </span></legend>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" id="gridRadios1" value="YES" checked>
+                                <label class="form-check-label" for="gridRadios1">
+                        Yes !
+                      </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" id="gridRadios2" value="YES2">
+                                <label class="form-check-label" for="gridRadios2">
+                        Yes !
+                      </label>
+                            </div>
+                            <div class="form-check disabled">
+                                <input class="form-check-input" type="radio" name="gender" id="gridRadios3" value="NONO" disabled>
+                                <label class="form-check-label" for="gridRadios3">
+                        No
+                      </label>
+                            </div>
+
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+
+        <div class="boxLeft1 card">
+            <div class="card-body">
+                <label class="card-text" for="fullName1">what's your full name my friend ?</label><br><br>
+                <input type="text" id="fullName1" class="form-control" name="fullName" placeholder="hoosier daddy"><br>
+            </div>
+        </div>
+
+
+        <div class="boxLeft2 card">
+            <div class="card-body" id="alienForm">
+                <div class="form-group row">
+                    <label class="card-text">
+                        By which of the following aliens, would you like to be kidnapped?</label>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input checkAliens" type="checkbox" name="interests[]" value="Blood" id="gridCheck1">
+                            <label class="form-check-label" for="gridCheck1">
+                                <img src="images/alien2.svg">
+                                Blood
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input checkAliens" type="checkbox" name="interests[]" value="Counter" id="gridCheck1">
+                            <label class="form-check-label" for="gridCheck1">
+                                <img src="images/alien3.svg">
+                                Counter
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input checkAliens" type="checkbox" name="interests[]" value="Niceone" id="gridCheck1">
+                            <label class="form-check-label" for="gridCheck1">
+                                <img src="images/alien4.svg">
+                                Niceone
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input checkAliens" type="checkbox" name="interests[]" value="Harry-potter" id="gridCheck1">
+                            <label class="form-check-label" for="gridCheck1">
+                                <img src="images/alien1.svg">
+                                Harry-potter
+                            </label>
+
+                        </div> <small id="passwordHelpInline" class="text-muted">
+                            You must select at least one of the aliens !!!
+                              </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="boxLeft3 card">
+            <div class="card-body">
+                <div class="form-row align-items-center">
+                    <div class="col-auto my-1">
+                        <label class="mr-sm-2" for="inlineFormCustomSelect">How much nights you want to spend with us ?</label>
+                        <select name="age" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                <option selected>Choose...</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+              </select>
+                    </div>
+                    <div class="col-auto my-1">
+                        <div class="custom-control custom-checkbox mr-sm-2">
+                            <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                            <label class="custom-control-label" for="customControlAutosizing">Remember my preference</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="boxLeft4 card">
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Tell us about your first alien's experience</label><br><br>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" name="address" rows="3"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="boxLeft5 card">
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="inputPassword6">what is your bank account password ?</label><br>
+                    <input type="password" pattern="[0-9]{8}" name="pass" id="inputPassword6" class="form-control " aria-describedby="passwordHelpInline">
+                    <small id="passwordHelpInline" class="text-muted">
+              Must be only 8 numbers between 0 to 9. (ex. 12345678)
+            </small>
+                </div>
+            </div>
+        </div>
+
+        <div class="boxLeft6 card">
+            <div class="card-body form-row align-items-center">
+                <div class="form-group">
+                    <label for="colFormLabel" class=" col-form-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" name="mail" id="colFormLabel" placeholder="alienLover@gmail.com">
+                    </div><br>
+                </div>
+                <div class="form-outline col-sm-10">
+                    <label class="form-label" for="typeURL">Your Facebook URL</label>
+                    <input type="url" id="typeURL" class="form-control" name="website" />
+
+                </div>
+            </div>
+        </div>
+
+        <div class="boxLeft7 card">
+            <div class="card-body">
+                <label class="form-label" for="customRange2">How much ransom <span class="smallFont">(Hebrew = "כופר")</span> would your country pay for save your life?</label>
+                <div class="range">
+                    <span>0 &nbsp</span>
+                    <input type="range" name="temper" class="form-range" min="0" max="5" id="customRange2" />
+                    <span>&nbsp10,000,000$</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="boxLeft8 card">
+            <div class="card-body">
+                <label for="coff">How much alien babies do you want?</label><br><br>
+                <input type="number" min="1" class="form-control" id="coff" name="coffee" required><br>
+            </div>
+        </div>
+        <br>
+
+        <div class="boxLeft9 card">
+            <div class="card-body">
+                <label for="phone">We need to confirm that you are a Human (Sorry robots we can't kidnap you)</label><br><br>
+                <img class=" centerVerImage" src="images/verify1.svg">
+                <input type="tel" class="form-control" id="verify" name="phone" pattern="[0-9]{5}" required>
+                <small id="passwordHelpInline" class="text-muted">
+                    Must be 5 numbers only (ex. 00101)
+                </small>
+            </div>
+            <input class="btn card" type="submit" value="Send Form" onclick="return checkValid()">
+        </div>
+
+    </form>
+
+    <footer>
+        <div class="animationBlock alien1 "></div>
+        <div class="alien2 animationBlock"></div>
+
+        <!-- <div class="alien3 animationBlock"></div>
+        <div class="alien4 animationBlock"></div>
+        <div class="alien5 animationBlock"></div> -->
+    </footer>
+
+</body>
+
+</html>
